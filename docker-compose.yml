@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  maktoobgar:
+    container_name: maktoobgar
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./configs:/etc/nginx/conf.d
+      - ./:/project
+      - maktoobgar-log:/var/log/nginx
+    ports:
+      - 3002:80
+
+volumes:
+  maktoobgar-log:
