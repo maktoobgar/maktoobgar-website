@@ -1,5 +1,7 @@
 {
-    "workbench.editorAssociations": {
-        "*.md": "default"
-    },
+	"workbench.editorAssociations": {
+		"*.md": "default"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true
 }
