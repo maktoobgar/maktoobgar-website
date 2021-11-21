@@ -14,6 +14,10 @@ Header-Banner
 	height: 100vh;
 }
 
+.full-max-height {
+	min-height: 100vh;
+}
+
 .full-padding {
 	padding: 3rem 2.5rem;
 }
@@ -81,6 +85,7 @@ About
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	max-height: 100%;
 }
 
 .about-context {
@@ -90,6 +95,7 @@ About
 }
 
 .about-image {
+	flex: 0 0;
 	border-radius: 50%;
 	overflow: hidden;
 	padding: 1.5rem;
