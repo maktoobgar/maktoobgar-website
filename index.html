@@ -7,14 +7,15 @@
 		<title>Home | Maktoobgar</title>
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./fontawesome/css/all.min.css" />
 	</head>
 	<body>
 		<!-- header -->
-		<header class="full header">
+		<header class="h-100v relative">
 			<!-- banner -->
-			<img src="./images/hero.jpg" alt="computer banner" class="banner-img" />
-			<div class="absolute banner-infront-color"></div>
-			<section class="absolute banner-middle">
+			<img src="./images/hero.jpg" alt="computer banner" class="h-100p" />
+			<div class="absolute wh-100p banner-color"></div>
+			<section class="absolute wh-100p banner-content">
 				<h1>welcome to my website</h1>
 				<h5>coding, gaming, living, all the time, every day...</h5>
 			</section>
@@ -22,12 +23,12 @@
 		</header>
 		<!-- end of header -->
 		<!--  -->
-		<section class="full-max-height full-padding full-color-1 flex-center">
-			<article class="about">
+		<section class="full-extendable full-color-1 flex-center">
+			<article class="flex-column-center context-limit">
 				<div class="about-image">
 					<img src="./icon.png" alt="me" />
 				</div>
-				<div class="about-context">
+				<div>
 					<h3 class="h3">Who?</h3>
 					<p class="p">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -46,6 +47,46 @@
 				</div>
 			</article>
 		</section>
-		<section class="full full-padding full-color-2"></section>
+		<section class="full full-color-2 flex-center">
+			<div class="flex-column-center card-container">
+				<h3 class="h3 w-100p">Fields</h3>
+				<!-- Cards Container -->
+				<div class="cards-container">
+					<!-- Single Card -->
+					<article class="card">
+						<div class="card-image">
+							<img src="images/python.png" alt="" />
+							<div class="card-image-cutter"></div>
+						</div>
+						<div class="paragraph relative">
+							<h3 class="h3">Python</h3>
+							<p class="card-extra">5 years</p>
+							<p class="p">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+								amet et perferendis ex facilis, pariatur, fugit placeat
+								consequatur nisi corporis accusamus porro suscipit eius. Esse
+								officia tempora, pariatur repellendus earum dignissimos
+								temporibus corporis ullam laudantium exercitationem nostrum
+								labore consequuntur quisquam minus dolores deserunt aliquam
+								nulla a molestiae excepturi atque vel.
+							</p>
+						</div>
+						<div class="card-caption" style="flex-basis: 50%">
+							<div>
+								<p>5 Samples</p>
+							</div>
+							<div>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</article>
+					<!-- End Of Single Card -->
+					<div></div>
+				</div>
+				<!-- End Of Cards Container -->
+			</div>
+		</section>
 	</body>
 </html>

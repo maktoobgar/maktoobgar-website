@@ -3,5 +3,9 @@
 		"*.md": "default"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"[sass]": {
+		"editor.defaultFormatter": "sasa.vscode-sass-format"
+	},
+	"sassFormat.useSingleQuotes": true
 }

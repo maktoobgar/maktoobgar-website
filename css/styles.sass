@@ -1,0 +1,134 @@
+@import globals
+
+/* ===============
+ * Header-Banner
+ * ===============
+
+.full-padding
+    padding: 3rem 2.5rem
+
+.full-color-1
+    background: $color-grey-9
+
+.full-color-2
+    background: $color-primary-9
+
+.full
+    @extend .full-padding
+
+    height: 100vh
+
+.full-extendable
+    @extend .full-padding
+
+    min-height: 100vh
+
+.banner-color
+    background: linear-gradient($color-white, $color-grey-2)
+    opacity: 45%
+
+.banner-content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: column
+    text-align: center
+
+    > h1
+        color: $color-primary-1
+        text-shadow: 0px 0px 15px $color-white
+
+    > h5
+        color: $color-grey-9
+        text-shadow: 0px 0px 15px $color-black
+        padding: 1rem 5rem
+
+/* ===============
+ * Header-Nav
+ * ===============
+
+/* ===============
+ * About
+ * ===============
+
+.about-image
+    flex: 0 0
+    border-radius: 50%
+    overflow: hidden
+    padding: 1.5rem
+    width: 100%
+    max-width: 350px
+
+/* ===============
+ * Fields
+ * ===============
+
+.cards-container
+    @extend .flex-row-center
+
+    margin-top: 1rem
+    width: 100%
+
+.card
+    @extend .flex-column
+
+    border: 1px solid $color-primary-5
+    background: $color-grey-9
+    width: 350px
+    box-shadow: 0px 0px 5px rgba($color-black, 0.5)
+    border-radius: $radius
+    transition: $transition
+    overflow: hidden
+    cursor: pointer
+
+.card:hover
+    border: 1px solid blue
+    box-shadow: 0px 0px 15px rgba($color-black, 0.5)
+    transform: scale(101%)
+
+.card:hover .card-image-cutter
+    bottom: -100px
+    transform: rotate(0deg)
+
+.card:hover .card-caption
+    border-top: 1px solid blue
+
+.card:hover .card-caption > div
+    color: $color-grey-1
+
+.card-extra
+    position: absolute
+    right: 1rem
+    top: 3rem
+    color: $color-grey-5
+    font-size: 1.05rem
+
+.card-caption
+    @extend .flex-row-center
+
+    border-top: 1px solid $color-primary-5
+    transition: $transition
+
+    & > div
+        transition: $transition
+        flex-basis: 50%
+        padding: 1rem 1rem 1rem 1rem
+        color: $color-grey-4
+
+    & > div:last-child
+        direction: rtl
+
+.card-image
+    position: relative
+    background: $color-grey-8
+    overflow: hidden
+
+.card-image-cutter
+    width: 150%
+    height: 100px
+    background: $color-grey-9
+    position: absolute
+    left: -5px
+    bottom: -50px
+    transition: $transition
+    transform: rotate(-11deg)

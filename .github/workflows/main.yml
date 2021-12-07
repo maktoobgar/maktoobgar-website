@@ -2,16 +2,19 @@ name: main-CI-CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
-    runs-on: [ self-hosted, main ]
+    runs-on: [self-hosted, main]
 
     steps:
       - uses: actions/checkout@v2
+      - name: Sass Convert
+        run: |
+          sass css:css
       - name: Docker Restart
         run: |
           docker-compose down
